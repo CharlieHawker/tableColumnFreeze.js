@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tableColumnFreeze Example</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,500" />
+  <style type="text/css">
+  body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-weight: 300;
+  }
+  .freeze {
+    max-width: 640px;
+    overflow: hidden;
+  }
+  table, th, td {
+    border-collapse: collapse;
+  }
+  th, td {
+    white-space: nowrap;
+    padding: 0.5em 1em;
+  }
+  h1,h2,h3,th {
+    font-weight: 500;
+  }
+  thead tr {
+    background: #ccc;
+  }
+  th {
+    background: #ccc;
+  }
+  tbody th {
+    background: #f1f1f1;
+  }
+  tbody td {
+    background: white;
+  }
+  </style>
+</head>
+<body>
+  <h3>Frozen Table Cells</h3>
+  <div class="freeze">
+    <table class="freeze__table" border="1">
+      <thead>
+        <tr>
+          <th>Frozen Column 1</th>
+          <th>Frozen Column 2</th>
+          <th>Normal Column 1</th>
+          <th>Normal Column 2</th>
+          <th>Normal Column 3</th>
+          <th>Normal Column 4</th>
+          <th>Normal Column 5</th>
+          <th>Normal Column 6</th>
+          <th>Normal Column 7</th>
+          <th>Normal Column 8</th>
+          <th>Normal Column 9</th>
+          <th>Normal Column 10</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Frozen Column 1</th>
+          <th>Frozen Column 2</th>
+          <td>Normal Column 1</td>
+          <td>Normal Column 2</td>
+          <td>Normal Column 3</td>
+          <td>Normal Column 4</td>
+          <td>Normal Column 5</td>
+          <td>Normal Column 6</td>
+          <td>Normal Column 7</td>
+          <td>Normal Column 8</td>
+          <td>Normal Column 9</td>
+          <td>Normal Column 10</td>
+        </tr>
+        <tr>
+          <th>Frozen Column 1</th>
+          <th>Frozen Column 2</th>
+          <td>Normal Column 1</td>
+          <td>Normal Column 2</td>
+          <td>Normal Column 3</td>
+          <td>Normal Column 4</td>
+          <td>Normal Column 5</td>
+          <td>Normal Column 6</td>
+          <td>Normal Column 7</td>
+          <td>Normal Column 8</td>
+          <td>Normal Column 9</td>
+          <td>Normal Column 10</td>
+        </tr>
+        <tr>
+          <th>Frozen Column 1</th>
+          <th>Frozen Column 2</th>
+          <td>Normal Column 1</td>
+          <td>Normal Column 2</td>
+          <td>Normal Column 3</td>
+          <td>Normal Column 4</td>
+          <td>Normal Column 5</td>
+          <td>Normal Column 6</td>
+          <td>Normal Column 7</td>
+          <td>Normal Column 8</td>
+          <td>Normal Column 9</td>
+          <td>Normal Column 10</td>
+        </tr>
+        <tr>
+          <th>Frozen Column 1</th>
+          <th>Frozen Column 2</th>
+          <td>Normal Column 1</td>
+          <td>Normal Column 2</td>
+          <td>Normal Column 3</td>
+          <td>Normal Column 4</td>
+          <td>Normal Column 5</td>
+          <td>Normal Column 6</td>
+          <td>Normal Column 7</td>
+          <td>Normal Column 8</td>
+          <td>Normal Column 9</td>
+          <td>Normal Column 10</td>
+        </tr>
+        <tr>
+          <th>Frozen Column 1</th>
+          <th>Frozen Column 2</th>
+          <td>Normal Column 1</td>
+          <td>Normal Column 2</td>
+          <td>Normal Column 3</td>
+          <td>Normal Column 4</td>
+          <td>Normal Column 5</td>
+          <td>Normal Column 6</td>
+          <td>Normal Column 7</td>
+          <td>Normal Column 8</td>
+          <td>Normal Column 9</td>
+          <td>Normal Column 10</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="tableColumnFreeze.js"></script>
+  <script type="text/javascript">
+  freezer = new TableColumnFreeze(document.querySelector('.freeze'));
+  </script>
+</body>
+</html>
