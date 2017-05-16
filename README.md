@@ -18,7 +18,7 @@ Freezes columns in a table.
 var freezer = new TableColumnFreeze(document.getElementById('freeze-me'));
 ```
 
-Check out **example.html** for a fuller example.
+Check out **[the example](https://charliehawker.github.io/tableColumnFreeze.js/example.html)** ([source](https://github.com/CharlieHawker/tableColumnFreeze.js/blob/master/example.html)) for a fuller example.
 
 ## Notes / Gotchas
 * The column freezing is done based on columns which use the `th` element instead of a `td` (inside the `tbody`).
